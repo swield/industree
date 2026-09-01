@@ -1,0 +1,107 @@
+*industree.txt*  A dark color scheme for Vim and Neovim
+
+==============================================================================
+CONTENTS                                                  *industree-contents*
+
+    1. Introduction .......................... |industree-introduction|
+    2. Requirements .......................... |industree-requirements|
+    3. Installation .......................... |industree-installation|
+    4. Usage ................................. |industree-usage|
+    5. Configuration ......................... |industree-configuration|
+    6. Coverage .............................. |industree-coverage|
+
+==============================================================================
+1. INTRODUCTION                                       *industree-introduction*
+
+industree is a dark color scheme for Vim and Neovim, with teal and green
+accents.
+
+==============================================================================
+2. REQUIREMENTS                                       *industree-requirements*
+
+Vim 8.0, or Neovim 0.10 for the treesitter and LSP colors.
+
+Turn on 'termguicolors' for the full palette. The traditional highlight
+groups carry a 256-color index each, so without it you still get a complete
+base scheme. The treesitter, LSP and plugin groups are defined in gui colors
+only, and fall back to whatever traditional group they link to.
+
+==============================================================================
+3. INSTALLATION                                       *industree-installation*
+
+With lazy.nvim: >lua
+
+    return { "swield/industree", lazy = false, priority = 1000 }
+
+<With vim-plug: >vim
+
+    Plug 'swield/industree'
+
+<Or with the native |packages| feature, which needs no plugin manager. Clone
+into a "start" directory on 'packpath': >
+
+    git clone --depth 1 https://github.com/swield/industree \
+        ~/.vim/pack/colors/start/industree
+
+<For Neovim the directory is
+~/.local/share/nvim/site/pack/colors/start/industree instead.
+
+A native install leaves the help tags ungenerated, so do that once: >vim
+
+    :helptags ~/.vim/pack/colors/start/industree/doc
+
+<
+==============================================================================
+4. USAGE                                                     *industree-usage*
+
+Load the scheme: >vim
+
+    colorscheme industree
+
+<With vim-plug, put that line after `plug#end()`. With LazyVim, set
+`opts.colorscheme` to "industree" instead.
+
+Set any of the variables in |industree-configuration| before the scheme
+loads; it reads them as it loads.
+
+==============================================================================
+5. CONFIGURATION                                     *industree-configuration*
+
+                                                  *g:industree_italic_comment*
+g:industree_italic_comment ~
+Comments are italic by default. Turn the italics off if your font has to
+synthesise the slant, which is usually the case for CJK.
+>vim
+    let g:industree_italic_comment = 0
+
+<Default: 1
+
+                                                *g:industree_no_termguicolors*
+g:industree_no_termguicolors ~
+Under Neovim the scheme switches 'termguicolors' on, in case Neovim did not
+detect support for it. Set this if you manage the option yourself.
+>vim
+    let g:industree_no_termguicolors = 1
+
+<Default: 0. Vim is not affected either way: there 'termguicolors' also needs
+'t_8f' and 't_8b', and setting it without them leaves the screen colorless.
+
+==============================================================================
+6. COVERAGE                                               *industree-coverage*
+
+The traditional highlight groups, the treesitter captures, LSP diagnostics
+and references, the 16 ANSI colors a |:terminal| buffer uses, and these
+plugins: >
+
+    snacks.nvim (picker, indent, notifier, dashboard)
+    blink.cmp
+    gitsigns.nvim
+    nvim-treesitter-context, aerial.nvim, trouble.nvim, which-key.nvim
+    nvim-dap and nvim-dap-ui
+    diffview.nvim
+    flash.nvim, grug-far.nvim
+    vim-illuminate, vim-gitgutter, vim-cpp-enhanced-highlight
+
+<
+==============================================================================
+vim:tw=78:ts=8:noet:ft=help:norl:

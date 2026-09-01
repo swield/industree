@@ -1,0 +1,77 @@
+# industree
+
+A dark color scheme for Vim and Neovim, with teal and green accents.
+
+## Features
+
+- Tree-sitter and LSP semantic highlighting
+- Support for common file types and plugins
+- Terminal colors
+
+## Requirements
+
+- Vim 8.0, or Neovim 0.10 for the tree-sitter and LSP colors
+- `termguicolors` for the full palette
+
+Neovim turns `termguicolors` on for you; in Vim it also needs `t_8f` and
+`t_8b`.
+
+## Installation
+
+With [lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+-- lua/plugins/industree.lua
+return { "swield/industree", lazy = false, priority = 1000 }
+```
+
+With [vim-plug](https://github.com/junegunn/vim-plug):
+
+```vim
+Plug 'swield/industree'
+```
+
+## Usage
+
+```vim
+colorscheme industree
+```
+
+With vim-plug, put that line after `plug#end()`. With LazyVim, set
+`opts.colorscheme` instead.
+
+## Configuration
+
+```vim
+let g:industree_italic_comment = 0   " comments are italic by default
+let g:industree_no_termguicolors = 1 " skip the automatic termguicolors
+```
+
+Set either before you load the scheme. Turn the italics off if your font has
+to synthesise the slant, which is usually the case for CJK.
+
+## Supported Plugins
+
+- [snacks.nvim](https://github.com/folke/snacks.nvim) (picker, indent, notifier, dashboard)
+- [blink.cmp](https://github.com/saghen/blink.cmp)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
+- [aerial.nvim](https://github.com/stevearc/aerial.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap) and [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+- [diffview.nvim](https://github.com/sindrets/diffview.nvim)
+- [flash.nvim](https://github.com/folke/flash.nvim)
+- [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim)
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)
+
+## Documentation
+
+See [doc/industree.txt](doc/industree.txt), or `:help industree` once your
+plugin manager has generated the help tags.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
