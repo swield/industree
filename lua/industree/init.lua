@@ -38,10 +38,10 @@ local P = {
   -- Six headings. Same values as htmlH1-H6.
   heading = { "#d9fdff", "#00ffd7", "#00ffaf", "#a7edec", "#74b9b8", "#238b8a" },
 
-  info = "#49a9ff", -- DiagnosticInfo and the change family (Changed, diffChanged)
+  info = "#49a9ff", -- DiagnosticInfo and the change family (Changed, diffChanged, DiffviewStatusModified)
   hint = "#d0cded", -- DiagnosticHint
   error = "#ff223a", -- DiagnosticError, DapBreakpoint, Diffview delete
-  warn = "#ffca00", -- DiagnosticWarn, DapBreakpointCondition, Diffview change
+  warn = "#ffca00", -- DiagnosticWarn, DapBreakpointCondition
   ok = "#00ffaf", -- DiagnosticOk, DapStopped, Diffview add. Same value as type
 
   diff_add = "#0f2f1a",
