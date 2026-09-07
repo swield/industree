@@ -68,11 +68,11 @@ hi Visual           cterm=NONE    gui=NONE    ctermfg=NONE ctermbg=24   guifg=NO
 " -----------------------------------------------------------------------------
 " Window Borders And Status Lines
 hi VertSplit        cterm=NONE    gui=NONE    ctermfg=237  ctermbg=NONE guifg=#2f3e46 guibg=NONE
-hi StatusLine       cterm=bold    gui=bold    ctermfg=50  ctermbg=236   guifg=#00ffd7 guibg=#1b292f
-hi StatusLineNC     cterm=NONE    gui=NONE    ctermfg=67  ctermbg=235   guifg=#7a98a7 guibg=#18252c
+hi StatusLine       cterm=bold    gui=bold    ctermfg=50  ctermbg=236   guifg=#00ffd7 guibg=#18252c
+hi StatusLineNC     cterm=NONE    gui=NONE    ctermfg=67  ctermbg=235   guifg=#7a98a7 guibg=#132026
 
-hi StatusLineTerm   cterm=bold    gui=bold    ctermfg=50  ctermbg=236   guifg=#00ffd7 guibg=#1b292f
-hi StatusLineTermNC cterm=NONE    gui=NONE    ctermfg=67  ctermbg=235   guifg=#7a98a7 guibg=#18252c
+hi StatusLineTerm   cterm=bold    gui=bold    ctermfg=50  ctermbg=236   guifg=#00ffd7 guibg=#18252c
+hi StatusLineTermNC cterm=NONE    gui=NONE    ctermfg=67  ctermbg=235   guifg=#7a98a7 guibg=#132026
 
 " -----------------------------------------------------------------------------
 " Popup Menu And Cursor Feedback
@@ -110,9 +110,9 @@ hi MoreMsg          cterm=NONE    gui=NONE    ctermfg=50  ctermbg=NONE guifg=#00
 hi Question         cterm=NONE    gui=NONE    ctermfg=50  ctermbg=NONE guifg=#00ffd7 guibg=NONE
 hi ModeMsg          cterm=bold    gui=bold    ctermfg=153 ctermbg=NONE guifg=#c8e7f7 guibg=NONE
 
-hi TabLine          cterm=NONE    gui=NONE    ctermfg=67  ctermbg=235  guifg=#7a98a7 guibg=#18252c
-hi TabLineSel       cterm=bold    gui=bold    ctermfg=50  ctermbg=236  guifg=#00ffd7 guibg=#1b292f
-hi TabLineFill      cterm=NONE    gui=NONE    ctermfg=NONE ctermbg=235  guifg=NONE    guibg=#18252c
+hi TabLine          cterm=NONE    gui=NONE    ctermfg=67  ctermbg=235  guifg=#7a98a7 guibg=#132026
+hi TabLineSel       cterm=bold    gui=bold    ctermfg=50  ctermbg=236  guifg=#00ffd7 guibg=#18252c
+hi TabLineFill      cterm=NONE    gui=NONE    ctermfg=NONE ctermbg=235  guifg=NONE    guibg=#132026
 
 hi SpellBad         cterm=underline gui=undercurl ctermfg=203 ctermbg=NONE guisp=#ff223a
 hi SpellCap         cterm=underline gui=undercurl ctermfg=220 ctermbg=NONE guisp=#ffca00
