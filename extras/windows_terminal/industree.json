@@ -1,0 +1,25 @@
+// industree colors for Windows Terminal
+// Upstream: https://github.com/swield/industree/raw/main/extras/windows_terminal/industree.json
+{
+    "background": "#0e1b21",
+    "black": "#1b292f",
+    "blue": "#006bb4",
+    "brightBlack": "#4b6775",
+    "brightBlue": "#49a9ff",
+    "brightCyan": "#00ffd7",
+    "brightGreen": "#00ffaf",
+    "brightPurple": "#da6fd3",
+    "brightRed": "#ff223a",
+    "brightWhite": "#c8e7f7",
+    "brightYellow": "#ffca00",
+    "cursorColor": "#00ffd7",
+    "cyan": "#07b699",
+    "foreground": "#c8e7f7",
+    "green": "#07b57b",
+    "name": "industree",
+    "purple": "#9e3699",
+    "red": "#9e001b",
+    "selectionBackground": "#004968",
+    "white": "#89a7b6",
+    "yellow": "#b38d03"
+}

@@ -1,0 +1,16 @@
+# industree colors for GNOME Terminal
+# <PROFILE_UUID> is the UUID of the profile this applies to.
+# Upstream: https://github.com/swield/industree/raw/main/extras/gnome_terminal/industree.dconf
+
+[:<PROFILE_UUID>]
+background-color='rgb(14, 27, 33)'
+cursor-background-color='rgb(0, 255, 215)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(14, 27, 33)'
+foreground-color='rgb(200, 231, 247)'
+highlight-background-color='rgb(0, 73, 104)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(200, 231, 247)'
+palette=['rgb(27, 41, 47)', 'rgb(158, 0, 27)', 'rgb(7, 181, 123)', 'rgb(179, 141, 3)', 'rgb(0, 107, 180)', 'rgb(158, 54, 153)', 'rgb(7, 182, 153)', 'rgb(137, 167, 182)', 'rgb(75, 103, 117)', 'rgb(255, 34, 58)', 'rgb(0, 255, 175)', 'rgb(255, 202, 0)', 'rgb(73, 169, 255)', 'rgb(218, 111, 211)', 'rgb(0, 255, 215)', 'rgb(200, 231, 247)']
+use-theme-colors=false
+visible-name='industree'

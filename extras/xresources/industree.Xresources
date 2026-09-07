@@ -1,0 +1,24 @@
+! industree colors for Xresources
+! Upstream: https://github.com/swield/industree/raw/main/extras/xresources/industree.Xresources
+
+*background: #0e1b21
+*foreground: #c8e7f7
+*cursorColor: #00ffd7
+
+*color0: #1b292f
+*color1: #9e001b
+*color2: #07b57b
+*color3: #b38d03
+*color4: #006bb4
+*color5: #9e3699
+*color6: #07b699
+*color7: #89a7b6
+
+*color8: #4b6775
+*color9: #ff223a
+*color10: #00ffaf
+*color11: #ffca00
+*color12: #49a9ff
+*color13: #da6fd3
+*color14: #00ffd7
+*color15: #c8e7f7

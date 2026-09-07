@@ -1,0 +1,22 @@
+# industree colors for WezTerm
+# Upstream: https://github.com/swield/industree/raw/main/extras/wezterm/industree.toml
+
+[colors]
+foreground = "#c8e7f7"
+background = "#0e1b21"
+cursor_bg = "#00ffd7"
+cursor_border = "#00ffd7"
+cursor_fg = "#0e1b21"
+selection_bg = "#004968"
+selection_fg = "#c8e7f7"
+
+split = "#2f3e46"
+scrollbar_thumb = "#2f3e46"
+
+ansi = ["#1b292f", "#9e001b", "#07b57b", "#b38d03", "#006bb4", "#9e3699", "#07b699", "#89a7b6"]
+brights = ["#4b6775", "#ff223a", "#00ffaf", "#ffca00", "#49a9ff", "#da6fd3", "#00ffd7", "#c8e7f7"]
+
+[metadata]
+aliases = []
+author = "swield"
+name = "industree"

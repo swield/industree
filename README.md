@@ -67,6 +67,35 @@ to synthesise the slant, which is usually the case for CJK.
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)
 
+## Extras
+
+The same palette outside the editor, so the shell, `ls`, fzf and tmux match
+what vim and Neovim render.
+
+| Tool | Extra |
+|---|---|
+| [Alacritty](https://github.com/alacritty/alacritty) | [extras/alacritty](extras/alacritty/industree.toml) |
+| [foot](https://codeberg.org/dnkl/foot) | [extras/foot](extras/foot/industree.ini) |
+| [fzf](https://github.com/junegunn/fzf) | [extras/fzf](extras/fzf/industree.sh) |
+| [Ghostty](https://ghostty.org) | [extras/ghostty](extras/ghostty/industree) |
+| [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal) | [extras/gnome_terminal](extras/gnome_terminal/industree.dconf) |
+| [kitty](https://sw.kovidgoyal.net/kitty/) | [extras/kitty](extras/kitty/industree.conf) |
+| [Konsole](https://konsole.kde.org) | [extras/konsole](extras/konsole/industree.colorscheme) |
+| [tmux](https://github.com/tmux/tmux) | [extras/tmux](extras/tmux/industree.tmux) |
+| [WezTerm](https://wezterm.org) | [extras/wezterm](extras/wezterm/industree.toml) |
+| [Windows Terminal](https://github.com/microsoft/terminal) | [extras/windows_terminal](extras/windows_terminal/industree.json) |
+| [Xresources](https://wiki.archlinux.org/title/X_resources) | [extras/xresources](extras/xresources/industree.Xresources) |
+
+The tmux file sets colors only. The status line layout, `status-left` and
+`status-right` stay yours.
+
+Generated from the applied highlights, so they cannot disagree with what the
+color scheme renders. To rebuild after a palette change:
+
+```vim
+:lua require("industree.extra").write()
+```
+
 ## Documentation
 
 See [doc/industree.txt](doc/industree.txt), or `:help industree` once your

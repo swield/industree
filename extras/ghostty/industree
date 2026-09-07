@@ -1,0 +1,25 @@
+# industree colors for Ghostty
+# Upstream: https://github.com/swield/industree/raw/main/extras/ghostty/industree
+
+palette = 0=#1b292f
+palette = 1=#9e001b
+palette = 2=#07b57b
+palette = 3=#b38d03
+palette = 4=#006bb4
+palette = 5=#9e3699
+palette = 6=#07b699
+palette = 7=#89a7b6
+palette = 8=#4b6775
+palette = 9=#ff223a
+palette = 10=#00ffaf
+palette = 11=#ffca00
+palette = 12=#49a9ff
+palette = 13=#da6fd3
+palette = 14=#00ffd7
+palette = 15=#c8e7f7
+
+background = #0e1b21
+foreground = #c8e7f7
+cursor-color = #00ffd7
+selection-background = #004968
+selection-foreground = #c8e7f7
